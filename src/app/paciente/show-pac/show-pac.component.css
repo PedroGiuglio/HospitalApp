@@ -1,0 +1,100 @@
+.compPac{
+    background-color: #008eff;
+    height: 92vh;
+}
+
+.container{
+    height: auto;
+    width: 100%;
+    background-color: white;
+    -webkit-box-shadow: 26px 26px 25px -21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 26px 26px 25px -21px rgba(0,0,0,0.75);
+    box-shadow: 26px 26px 25px -21px rgba(0,0,0,0.75);
+}
+
+
+
+
+table {
+    table-layout: fixed;
+    width: 100%; /* Puedes ajustar esto según tus necesidades */
+  }
+  
+
+
+.celu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.containerHeaderPaciente{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.formSearch{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+}
+
+.formSearch input{
+    width: 550px;
+}
+
+.seccionButtons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+}
+
+
+
+
+.btnDanger{
+    margin-left: 5px;
+    width: 50px;
+}
+
+.edit{
+    margin-right: 15px;
+}
+
+.buttonMore{
+    border-style: none;
+    background-color: transparent;
+}
+
+.success-message{
+    height: 100vh;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.boxImage {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden; /* Esto asegura que la imagen no sobresalga del círculo */
+  }
+
+.boxImage img {
+    width: 100%; /* Haz que la imagen ocupe el 100% del contenedor */
+    height: 100%; /* Haz que la imagen ocupe el 100% del contenedor */
+    border-radius: 50%;
+    object-fit: cover; /* Esto asegura que la imagen cubra todo el espacio disponible */
+  }
+
+  .custom-table-row td {
+    vertical-align: middle;
+  }
+  

@@ -1,0 +1,49 @@
+.compPro{
+    background-color: #008eff;
+    height: 92vh;
+}
+
+.container{
+    height: auto;
+    width: 100%;
+    background-color: white;
+    -webkit-box-shadow: 26px 26px 25px -21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 26px 26px 25px -21px rgba(0,0,0,0.75);
+    box-shadow: 26px 26px 25px -21px rgba(0,0,0,0.75);
+}
+
+.celu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formSearch{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+}
+
+.formSearch input{
+    margin-left: 15px;
+    margin-right: 20px;
+    width: 550px;
+}
+
+.edit{
+    margin-right: 15px;
+}
+
+.custom-table-row td {
+    vertical-align: middle;
+  }
+
+  .seccionButtons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+}

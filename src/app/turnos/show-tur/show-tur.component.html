@@ -1,0 +1,54 @@
+<div class="home">
+    <div class="form">
+        <div style="display: flex; flex-direction: column;">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control" placeholder="Ingrese apellido del paciente">
+            <label class="form-label">Apellido</label>
+            <input type="text" class="form-control" placeholder="Ingrese apellido del paciente">
+            <label class="form-label">Historia Clinica</label>
+            <input type="text" class="form-control historiaClin" placeholder="historia clinica">
+
+
+            <div class="container" style="margin-left: -10px;">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Selecciona una categoría:</label>
+                    <select class="form-select" id="exampleFormControlSelect1" [(ngModel)]="selectedCategoria">
+                        <option *ngFor="let item of ListCategorias" [ngValue]="item.Id">{{item.categoria}}</option>
+                    </select>
+                </div>
+                <p>Categoría seleccionada: #{{selectedCategoria}}</p>
+            </div>
+
+            <div class="container" style="margin-left: -10px;">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect2">Selecciona un profesional:</label>
+                    <select class="form-select" id="exampleFormControlSelect2" [(ngModel)]="selectedItem">
+                        <option *ngFor="let item of ListTurnos" [ngValue]="item.IdTrabajador">
+                            {{item.NombreProfesional}} {{item.ApellidoProfesional}}
+                        </option>
+                    </select>
+                </div>
+                <p>Profesional seleccionado: #{{selectedItem}}</p>
+            </div>
+
+            <div>
+                <mat-form-field class="example-full-width">
+                    <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker" placeholder="Choose a date" (dateInput)="onDateInput($event)">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">Selecciona un profesional:</label>
+                <select class="form-select" id="exampleFormControlSelect2" [(ngModel)]="selectedItem">
+                    <option *ngFor="let item of ListTurnos" [ngValue]="item.IdTrabajador">
+                        {{item.NombreProfesional}} {{item.ApellidoProfesional}}
+                    </option>
+                </select>
+            </div>
+            
+            <button class="btn btn-primary" (click)="botonGuardar()">Ingresar paciente</button>
+        </div>
+    </div>
+</div>
